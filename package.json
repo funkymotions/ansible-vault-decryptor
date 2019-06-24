@@ -1,0 +1,28 @@
+{
+  "name": "ansible-vault-decryptor",
+  "version": "1.0.0",
+  "description": "Module which allows to encrypt and decrypt files according to ansible-vault storage",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "watch": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel src -d build",
+    "lint": "eslint --ext .js ./src/**/*",
+    "lint-fix": "eslint --ext .js ./src/**/* --fix"
+  },
+  "author": "https://github.com/funkymotions",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "nodemon": "^1.19.1"
+  }
+}
